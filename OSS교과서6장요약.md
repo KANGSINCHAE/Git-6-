@@ -20,7 +20,7 @@
 -	깃은 master 브랜치를 하나 가지고 있고 브랜치는 HEAD 포인터를 가지고 있다.
 
 <h3>6-2.1 저장소 생성 및 초기화</h3>
--	실습 내용 기입
+<img src =https://user-images.githubusercontent.com/101856066/194851906-186b405f-6b3d-4638-a5b3-63ac6189fc7a.png>
 
 <h3>6-2.2 기본 브랜치</h3>
 -	깃은 최소 브랜치가 1개 이상 필요함.
@@ -41,6 +41,7 @@
 -	브랜치를 생성하려면 아래와 같은 명령어를 사용한다.
 -	git branch [Branch name] [Commit ID]
 -	브랜치 이름만 입력하면, 현재 HEAD포인터 기준으로 새로운 브랜치 생성, 직접 지정하면 지정한 커밋 ID 기준으로 생성
+<img src ="https://user-images.githubusercontent.com/101856066/194851908-79197048-e5ee-4c12-9c57-7cc5be97285e.png">
 
 <h3>6-3.2 브랜치 이름</h3>
 -	브랜치 이름은 /를 사용하여 계층적 구조로 만들어 사용이 가능. 규칙은 아래와 같음
@@ -50,6 +51,7 @@
 -	빈칸, 공백 문자, 물결(~), 캐럿(^), 물음표(?), 별표(*), 대괄호([]) 등은 포함할 수 없음
 -	아스키 제어 문자는 포함할 수 없음
 -	주의할 점은 브랜치 이름은 중복해서 사용하지 않아야함.
+<img src="https://user-images.githubusercontent.com/101856066/194851909-82509ef4-51f2-4d38-803d-74be89ef2ef1.png">
 
 <h3>6-3.3 소스트리 브랜치</h3>
 -	새탭에서 Add 클릭
@@ -61,7 +63,8 @@
 -	커밋을 선택하여 브랜치 생성하는 것은 지정한 커밋을 기준으로 브랜치를 생성한다는 것
 -	커밋 목록에서 브랜치 생성하면 명시된 커밋에 브랜치가 체크되어 있는 것을 확인
 -	최종커밋 기준으로 작업사본 부모항목 선택
--	결과 확인
+<img src="https://user-images.githubusercontent.com/101856066/194851912-4ee2567a-8fad-4495-b269-90f80e2b685f.png">
+<img src="https://user-images.githubusercontent.com/101856066/194851806-d54e393b-de01-488d-bd3d-a2e991cf38ce.png">
 
 <h1>6-4. 브랜치 확인</h1>
 <h3>6-4.1 간단 브랜치 목록</h3>
@@ -69,13 +72,16 @@
 -	별표는 현재 선택된 브랜치를 의미
 -	소스트리 목록에서 O 마크 이동 확인
 -	깃 배시에서는 *로 표시함.
+<img src="https://user-images.githubusercontent.com/101856066/194851811-870aa219-303b-445d-a91c-a37a2ae3e104.png">
 
 <h3>6-4.2 브랜치 해시</h3>
 -	특정한 커밋의 해시 값을 가리킴 저수준 명령인 rev-parse를 사용하여 현재 브랜치가 어떤 커밋 해시 값을 가리키는지 확인할 수는 있음
 -	브랜치의 해시값과 브랜치를 생성한 기준 커밋의 해시 값이 동일함.
+<img src="https://user-images.githubusercontent.com/101856066/194851813-40e3d4f9-5884-4f62-9fb2-f20c8b52a2ec.png">
 
 <h3>6-4.3 브랜치 세부 사항 확인</h3>
 -	Branch 명령어 뒤에 -v 또는 –verbose 옵션을 함께 사용하여 이름, 커밋ID, 커밋 메시지 등을 볼 수 있음.
+<img src="https://user-images.githubusercontent.com/101856066/194851816-acd2ad5e-9761-42de-b987-dcbd9446b7d9.png">
 
 <h1>6-5. 브랜치 이동</h1>
 <h3>6-5.1 체크아웃</h3>
@@ -84,7 +90,7 @@
 -	git checkout [브랜치이름]
 -	주의점은 깃은 하나의 워킹 디렉터리만 가지고 있고 다른 브랜치에서 작업하려면 브랜치를 변경하여 워킹 디렉터리를 재설정해야 함
 -	또한 커밋하지 않은 내용이 없으면, 브랜치를 변경할 수 없음. 이는 6-5.5에서 조금 더 자세히 언급됨
-
+<img src="https://user-images.githubusercontent.com/101856066/194851819-821a74db-3d0e-45e4-ad10-f3a6f1ee452d.png">
 
 <h3>6-5.2 브랜치 동작 원리</h3>
 -	HEAD 정보는 항상 변경된 브랜치의 마지막 커밋을 가리킴. 브랜치가 이동하면 HEAD 포인터도 같이 이동함
@@ -98,19 +104,22 @@
 -	리눅스에서 대시(-) 기호는 이전 디렉터리를 의미
 -	이 대시를 활용하여 쉽게 이전 브랜치로 이동할 수 있음.
 -	git checkout -를 활용하면 됨.
+<img  src="https://user-images.githubusercontent.com/101856066/194851822-461181f5-ac1b-4bc1-9151-589ca191961b.png">
 
 <h3>6-5.5 워킹 디렉터리 정리</h3>
 -	현재 작업하고 있는 워킹 디렉터리를 정리 하고 넘어가야 함
 -	워킹 디렉터리 안에서 작성하는 내용이 존재하고, 커밋하지 않았으면 체크아웃 시 경고가 발생함
 -	깃은 향후 충돌을 방지하기 위해서 이러한 제약을 걸어 놓았음
+<img src="https://user-images.githubusercontent.com/101856066/194851827-a7640d4d-50ce-49ba-8335-4c3a9150ed27.png">
 
 <h1>6-6. 브랜치 공간</h1>
 <h3>6-6.1 브랜치 로그</h3>
 -	현재까지 작업한 로그 기록을 확인할 때 git log를 쓰지만, 브랜치 흐름도를 쓰려면 --graph를 같이 사용함.  --graph --all 옵션을 사용하여 모든 로그를 출력함
 -	브랜치 경로와 작업들이 텍스트 그래프로 출력됨
+<img src = https://user-images.githubusercontent.com/101856066/194851829-47009ce7-98ac-484d-be4d-1c5000d952b3.png>
 
 <h3>6-6.2 브랜치 소스 확인</h3>
--	실습 내용 기입
+<img src = https://user-images.githubusercontent.com/101856066/194851830-5cba61b1-4fa5-434c-8fc9-c5366b985da1.png>
 
 <h1>6-7. HEAD 포인터</h1>
 <h3>6-7.1 마지막 커밋</h3>
@@ -120,11 +129,12 @@
 
 <h3>6-7.2 브랜치 HEAD</h3>
 -	브랜치를 이동하면 HEAD 포인터도 이동함.
--	실습내용 기입
+<img src = https://user-images.githubusercontent.com/101856066/194851834-4c8f473a-4fb3-472d-8542-509751001621.png>
 
 <h3>6-7.3 소스트리 HEAD</h3>
 -	소스트리 에서도 HEAD 포인트 상태를 쉽게 확인할 수 있음
 -	각 브랜치의 마지막 위치를 브랜치 아이콘으로 표시
+<img src =https://user-images.githubusercontent.com/101856066/194851839-16771e03-3d81-4c33-9d3f-cc563f0008ef.png>
 
 <h3>6-7.4 상대적 위치</h3>
 -	깃의 HEAD 포인터는 내부적으로 커밋을 생성하고 브랜치를 관리하는데 매우 유용
@@ -143,19 +153,22 @@
 -	Branch 생성과 이동을 한번에 처리하는 명령이 존재한다.
 -	Git checkout -b를 이용하면 된다.
 -	Git checkout -b [브랜치 이름]과 같이 사용한다.
+<img src = https://user-images.githubusercontent.com/101856066/194851839-16771e03-3d81-4c33-9d3f-cc563f0008ef.png>
 
 6-8.2 커밋 이동
 -	브랜치 이름은 커밋 해시 키와 동일함.
 -	브랜치 이름 대신 커밋 해시키를 사용하여 체크아웃 할 수도 있음
+<img src = https://user-images.githubusercontent.com/101856066/194851841-41466eb7-17d4-4532-a30f-d6966b61b1ef.png>
 
 6-8.3 HEAD를 활용한 이동
 -	HEAD 포인터를 사용하여 체크아웃 할 수도 있음
 -	Git checkout HEAD-1과 같이 사용
+<img src = https://user-images.githubusercontent.com/101856066/194851844-7b0d7f74-fb1f-432e-8f9e-770214b1fe30.png>
 
 6-8.4 돌아오기
 -	커밋 해시키 또는 HEAD를 사용하여 과거의 커밋으로 체크아웃했으면 다시 현재 시점으로 돌아와야 한다. 간단하게 대시(-)를 활용하면 됨
 -	Git checkout -를 사용한다.
-
+<img src = https://user-images.githubusercontent.com/101856066/194851850-31bf88a3-079f-4493-b8b1-c59b0c6421c2.png>
 
 6-9. 원격 브랜치
 -	로컬 저장소, 원격 저장소는 일종의 저장소임. 분산형 저장소의 특징으로써 다수의 저장소를 만들어 연결할 수 있음.
@@ -165,7 +178,8 @@
 -	보통 별칭/브랜치 이름 형태를 가지고 있음
 
 6-9.2 실습 준비
--	실습 내용 기입
+<img src = https://user-images.githubusercontent.com/101856066/194851853-6b53d1b5-2502-4303-88dc-36b8768c60d5.png>
+<img src = https://user-images.githubusercontent.com/101856066/194851855-bd57cb53-16c1-4295-9b5f-5604bc7b3ae8.png>
 
 6-9.3 브랜치 추적
 -	로컬 저장소에서 원격 저장소의 브랜치를 가리키는 것을 브랜치 추적이라고 부름
@@ -176,12 +190,17 @@
 -	자동으로 등록되지 않고, git remote show 명령어로 등록된 원격 브랜치를 확인할 수 있음
 -	리모트 브랜치는 서버 간 통신을 하고 나서 생성됨.
 -	동기화 하려면 git push [원격 저장소 별칭] [브랜치 이름] 작업을 해줘야 함
--	실습 내용 기입
+<img src = https://user-images.githubusercontent.com/101856066/194851858-3e784cc8-95c6-4de8-9a29-57392ae666d5.png>
+<img src = https://user-images.githubusercontent.com/101856066/194851861-36769f3d-44ec-4095-b6a9-800f79aad74e.png>
+<img src = https://user-images.githubusercontent.com/101856066/194851863-51b7de3b-1d32-4a16-88c0-29848482af11.png>
+<img src = https://user-images.githubusercontent.com/101856066/194851864-95016535-7a4b-4b49-866c-dce407e8af2c.png>
 
 6-9.5 이름이 다른 브랜치
 -	반드시 원격 브랜치와 로컬 브랜치는 이름이 동일할 필요가 없음.
 -	브랜치를 직접 수동으로 지정하여 연결하려면 콜론으로 구분한다.
 -	Git push origin 브랜치이름:새로운브랜치 와 같이 사용한다.
+<img src = https://user-images.githubusercontent.com/101856066/194851866-b2ef0831-4f35-43a3-a474-ea51f93f4010.png>
+<img src = https://user-images.githubusercontent.com/101856066/194851869-8574e93d-9776-46ae-a7eb-e64de5d048c7.png>                                                                                                               
 6-9.6 업스트림 트래킹
 -	업스트림은 브랜치 추적을 다르게 표현한 것
 -	로컬 저장소의 브랜치와 원격 저장소의 브랜치는 업로드 할 수 있도록 매칭되어 있음
@@ -190,15 +209,24 @@
 -	Git branch -r 옵션을 사용하면 원격 저장소의 리모트 브랜치 목록을 확인할 수 있음
 -	모든 브랜치 정보를 확인하고 싶다면 -a 옵션을 사용
 -	트래킹 브랜치는 -vv 옵션을 사용하여 확인함
+<img src = https://user-images.githubusercontent.com/101856066/194851871-66b6f5ce-62ac-4892-9a05-d7a09589173e.png>
+<img src = https://user-images.githubusercontent.com/101856066/194851874-34887d85-c47e-4783-979f-6bd1970d6be3.png>
+<img src = https://user-images.githubusercontent.com/101856066/194851878-ba813ee6-342b-4745-b6c6-f44ab5fa66d4.png>
 
 6-9.7 원격 브랜치 복사
 -	원격 저장소의 리모트 브랜치를 이용해서 로컬 저장소에서도 새로운 브랜치를 생성하여 동기화 가능
 -	Git checkout -b 새이름 origin/브랜치이름 과 같이 사용함.
+<img src = https://user-images.githubusercontent.com/101856066/194851879-ce00d7b7-4dfc-477a-aad6-320014b4e3a6.png>
+<img src = https://user-images.githubusercontent.com/101856066/194851882-2dd4b3db-1762-45b0-b95c-54f2ef5ef5f2.png>
+<img src = https://user-images.githubusercontent.com/101856066/194851885-8234dc14-f20f-4589-9b96-d3576b600272.png>
+<img src = https://user-images.githubusercontent.com/101856066/194851886-171c12ee-f515-4478-989f-795bd8eca0ba.png>
+<img src = https://user-images.githubusercontent.com/101856066/194851887-1396b23a-e58b-46be-b59e-50d59a54ef76.png>
 
 6-9.8 업스트림 연결
 -	기존에 있는 브랜치를 업스트림으로 직접 설정할 수 있음
 -	Git branch -u origin/브랜치이름 과 같이 사용하면 됨
 -	-u 옵션은 –set-upstream-to를 의미하고, 기존 브랜치를 특정 원격 브랜치로 추적함.
+-	<img src = https://user-images.githubusercontent.com/101856066/194851889-fbbf876f-54ca-4a5e-b863-5f143b9740a1.png>
 
 6-10. 브랜치 전송
 6-10.1 브랜치 푸시
@@ -214,20 +242,25 @@
 6-11. 브랜치 삭제
 -	브랜치를 삭제하는 것은 간단함. 하지만 브랜치 내용 및 커밋을 모두 삭제하기에 주의해야 함.
 -	현재 자신이 있는 브랜치는 삭제할 수 없음
+<img src = https://user-images.githubusercontent.com/101856066/194851894-826cc955-30f3-44ed-aab6-fbb7f68d6223.png>
 
 6-11.1 일반적인 삭제 방법
 -	-d 옵션을 사용함.
 -	Git branch -d [브랜치이름]
 -	스테이지 상태가 깨끗할 때만 삭제 허용
+<img src = https://user-images.githubusercontent.com/101856066/194851896-c0c61b17-2f03-48df-9d60-ce0cef5d8dd8.png>
 
 6-11.2 강제 삭제 방법
 -	-D 옵션을 사용해야 함.
 -	Git branch -D [브랜치이름]
+<img src = https://user-images.githubusercontent.com/101856066/194851898-13cd1077-90a3-4de0-9213-5cf35e66d70e.png>
 
 6-11.3 소스트리에서 삭제
 -	브랜치 선택 후 우클릭, featuer 삭제를 선택
 
 6-11.4 리모트 브랜치 삭제
 -	삭제 명령을 푸시해야 하며 git push origin --delete [리모트브랜치이름] 과 같이 사용해야 함.
-
+<img src = https://user-images.githubusercontent.com/101856066/194851899-01caa529-d22a-4c83-b260-d2f03cefa60a.png>
+<img src = https://user-images.githubusercontent.com/101856066/194851902-d457e2ed-0827-4bcc-ab7c-e53f201c17e4.png>
+<img src = https://user-images.githubusercontent.com/101856066/194851904-8b64a282-4bbe-408b-9e97-6dd2eeb08fe1.png>
 
