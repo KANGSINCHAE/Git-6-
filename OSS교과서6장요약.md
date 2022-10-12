@@ -148,118 +148,118 @@
 -	AHEAD : 서버로 전송되지 않은 로컬 커밋이 있는 것을 의미함.<br>
 -	BHEAD : 로컬 저장소로 내려받지 않은 커밋이 있는 것을 의미함.<br>
 
-6-8. 생성과 이동
-6-8.1 자동 이동 옵션
--	Branch 생성과 이동을 한번에 처리하는 명령이 존재한다.
--	Git checkout -b를 이용하면 된다.
--	Git checkout -b [브랜치 이름]과 같이 사용한다.
+<h1>6-8. 생성과 이동</h1>
+<h3>6-8.1 자동 이동 옵션</h3>
+-	Branch 생성과 이동을 한번에 처리하는 명령이 존재한다.<br>
+-	Git checkout -b를 이용하면 된다.<br>
+-	Git checkout -b [브랜치 이름]과 같이 사용한다.<br>
 <img src = https://user-images.githubusercontent.com/101856066/194851839-16771e03-3d81-4c33-9d3f-cc563f0008ef.png>
 
-6-8.2 커밋 이동
--	브랜치 이름은 커밋 해시 키와 동일함.
--	브랜치 이름 대신 커밋 해시키를 사용하여 체크아웃 할 수도 있음
+<h3>6-8.2 커밋 이동</h3>
+-	브랜치 이름은 커밋 해시 키와 동일함.<br>
+-	브랜치 이름 대신 커밋 해시키를 사용하여 체크아웃 할 수도 있음<br>
 <img src = https://user-images.githubusercontent.com/101856066/194851841-41466eb7-17d4-4532-a30f-d6966b61b1ef.png>
 
-6-8.3 HEAD를 활용한 이동
--	HEAD 포인터를 사용하여 체크아웃 할 수도 있음
--	Git checkout HEAD-1과 같이 사용
+<h3>6-8.3 HEAD를 활용한 이동</h3>
+-	HEAD 포인터를 사용하여 체크아웃 할 수도 있음<br>
+-	Git checkout HEAD-1과 같이 사용<br>
 <img src = https://user-images.githubusercontent.com/101856066/194851844-7b0d7f74-fb1f-432e-8f9e-770214b1fe30.png>
 
-6-8.4 돌아오기
+<h3>6-8.4 돌아오기</h3>
 -	커밋 해시키 또는 HEAD를 사용하여 과거의 커밋으로 체크아웃했으면 다시 현재 시점으로 돌아와야 한다. 간단하게 대시(-)를 활용하면 됨
 -	Git checkout -를 사용한다.
 <img src = https://user-images.githubusercontent.com/101856066/194851850-31bf88a3-079f-4493-b8b1-c59b0c6421c2.png>
 
-6-9. 원격 브랜치
+<h1>6-9. 원격 브랜치</h1>
 -	로컬 저장소, 원격 저장소는 일종의 저장소임. 분산형 저장소의 특징으로써 다수의 저장소를 만들어 연결할 수 있음.
-6-9.1 리모트 브랜치
+<h3>6-9.1 리모트 브랜치</h3>
 -	원격 저장소에 생성한 브랜치를 리모트 브랜치라 부름
 -	별도 명령을 실행해서 저장소를 동기화해야 함.
 -	보통 별칭/브랜치 이름 형태를 가지고 있음
 
-6-9.2 실습 준비
+<h3>6-9.2 실습 준비</h3>
 <img src = https://user-images.githubusercontent.com/101856066/194851853-6b53d1b5-2502-4303-88dc-36b8768c60d5.png>
 <img src = https://user-images.githubusercontent.com/101856066/194851855-bd57cb53-16c1-4295-9b5f-5604bc7b3ae8.png>
 
-6-9.3 브랜치 추적
--	로컬 저장소에서 원격 저장소의 브랜치를 가리키는 것을 브랜치 추적이라고 부름
--	추적 브랜치를 트래킹 브랜치라고 부름.
--	로컬 저장소가 원격 저장소와 연결될 때 원격 브랜치의 트래킹 정보는 자동으로 갱신됨
+<h3>6-9.3 브랜치 추적</h3>
+-	로컬 저장소에서 원격 저장소의 브랜치를 가리키는 것을 브랜치 추적이라고 부름<br>
+-	추적 브랜치를 트래킹 브랜치라고 부름.<br>
+-	로컬 저장소가 원격 저장소와 연결될 때 원격 브랜치의 트래킹 정보는 자동으로 갱신됨<br>
 
-6-9.4 브랜치 업로드
--	자동으로 등록되지 않고, git remote show 명령어로 등록된 원격 브랜치를 확인할 수 있음
--	리모트 브랜치는 서버 간 통신을 하고 나서 생성됨.
--	동기화 하려면 git push [원격 저장소 별칭] [브랜치 이름] 작업을 해줘야 함
+<h3>6-9.4 브랜치 업로드</h3>
+-	자동으로 등록되지 않고, git remote show 명령어로 등록된 원격 브랜치를 확인할 수 있음<br>
+-	리모트 브랜치는 서버 간 통신을 하고 나서 생성됨.<br>
+-	동기화 하려면 git push [원격 저장소 별칭] [브랜치 이름] 작업을 해줘야 함<br>
 <img src = https://user-images.githubusercontent.com/101856066/194851858-3e784cc8-95c6-4de8-9a29-57392ae666d5.png>
 <img src = https://user-images.githubusercontent.com/101856066/194851861-36769f3d-44ec-4095-b6a9-800f79aad74e.png>
 <img src = https://user-images.githubusercontent.com/101856066/194851863-51b7de3b-1d32-4a16-88c0-29848482af11.png>
 <img src = https://user-images.githubusercontent.com/101856066/194851864-95016535-7a4b-4b49-866c-dce407e8af2c.png>
 
-6-9.5 이름이 다른 브랜치
--	반드시 원격 브랜치와 로컬 브랜치는 이름이 동일할 필요가 없음.
--	브랜치를 직접 수동으로 지정하여 연결하려면 콜론으로 구분한다.
--	Git push origin 브랜치이름:새로운브랜치 와 같이 사용한다.
+<h3>6-9.5 이름이 다른 브랜치</h3>
+-	반드시 원격 브랜치와 로컬 브랜치는 이름이 동일할 필요가 없음.<br>
+-	브랜치를 직접 수동으로 지정하여 연결하려면 콜론으로 구분한다.<br>
+-	Git push origin 브랜치이름:새로운브랜치 와 같이 사용한다.<br>
 <img src = https://user-images.githubusercontent.com/101856066/194851866-b2ef0831-4f35-43a3-a474-ea51f93f4010.png>
 <img src = https://user-images.githubusercontent.com/101856066/194851869-8574e93d-9776-46ae-a7eb-e64de5d048c7.png>                                                                                                               
-6-9.6 업스트림 트래킹
--	업스트림은 브랜치 추적을 다르게 표현한 것
--	로컬 저장소의 브랜치와 원격 저장소의 브랜치는 업로드 할 수 있도록 매칭되어 있음
--	이러한 매칭을 업스트림 트래킹이라고 함
--	이는 원격 브랜치와 로컬 브랜치를 연결해주는 중간 다리 역할을 함
--	Git branch -r 옵션을 사용하면 원격 저장소의 리모트 브랜치 목록을 확인할 수 있음
--	모든 브랜치 정보를 확인하고 싶다면 -a 옵션을 사용
--	트래킹 브랜치는 -vv 옵션을 사용하여 확인함
+<h3>6-9.6 업스트림 트래킹</h3>
+-	업스트림은 브랜치 추적을 다르게 표현한 것<br>
+-	로컬 저장소의 브랜치와 원격 저장소의 브랜치는 업로드 할 수 있도록 매칭되어 있음<br>
+-	이러한 매칭을 업스트림 트래킹이라고 함<br>
+-	이는 원격 브랜치와 로컬 브랜치를 연결해주는 중간 다리 역할을 함<br>
+-	Git branch -r 옵션을 사용하면 원격 저장소의 리모트 브랜치 목록을 확인할 수 있음<br>
+-	모든 브랜치 정보를 확인하고 싶다면 -a 옵션을 사용<br>
+-	트래킹 브랜치는 -vv 옵션을 사용하여 확인함<br>
 <img src = https://user-images.githubusercontent.com/101856066/194851871-66b6f5ce-62ac-4892-9a05-d7a09589173e.png>
 <img src = https://user-images.githubusercontent.com/101856066/194851874-34887d85-c47e-4783-979f-6bd1970d6be3.png>
 <img src = https://user-images.githubusercontent.com/101856066/194851878-ba813ee6-342b-4745-b6c6-f44ab5fa66d4.png>
 
-6-9.7 원격 브랜치 복사
--	원격 저장소의 리모트 브랜치를 이용해서 로컬 저장소에서도 새로운 브랜치를 생성하여 동기화 가능
--	Git checkout -b 새이름 origin/브랜치이름 과 같이 사용함.
+<h3>9.7 원격 브랜치 복사</h3>
+-	원격 저장소의 리모트 브랜치를 이용해서 로컬 저장소에서도 새로운 브랜치를 생성하여 동기화 가능<br>
+-	Git checkout -b 새이름 origin/브랜치이름 과 같이 사용함.<br>
 <img src = https://user-images.githubusercontent.com/101856066/194851879-ce00d7b7-4dfc-477a-aad6-320014b4e3a6.png>
 <img src = https://user-images.githubusercontent.com/101856066/194851882-2dd4b3db-1762-45b0-b95c-54f2ef5ef5f2.png>
 <img src = https://user-images.githubusercontent.com/101856066/194851885-8234dc14-f20f-4589-9b96-d3576b600272.png>
 <img src = https://user-images.githubusercontent.com/101856066/194851886-171c12ee-f515-4478-989f-795bd8eca0ba.png>
 <img src = https://user-images.githubusercontent.com/101856066/194851887-1396b23a-e58b-46be-b59e-50d59a54ef76.png>
 
-6-9.8 업스트림 연결
--	기존에 있는 브랜치를 업스트림으로 직접 설정할 수 있음
--	Git branch -u origin/브랜치이름 과 같이 사용하면 됨
--	-u 옵션은 –set-upstream-to를 의미하고, 기존 브랜치를 특정 원격 브랜치로 추적함.
--	<img src = https://user-images.githubusercontent.com/101856066/194851889-fbbf876f-54ca-4a5e-b863-5f143b9740a1.png>
+<h3>6-9.8 업스트림 연결</h3>
+-	기존에 있는 브랜치를 업스트림으로 직접 설정할 수 있음<br>
+-	Git branch -u origin/브랜치이름 과 같이 사용하면 됨<br>
+-	-u 옵션은 –set-upstream-to를 의미하고, 기존 브랜치를 특정 원격 브랜치로 추적함.<br>
+<img src = https://user-images.githubusercontent.com/101856066/194851889-fbbf876f-54ca-4a5e-b863-5f143b9740a1.png>
 
-6-10. 브랜치 전송
-6-10.1 브랜치 푸시
--	깃의 푸시 작업은 로컬 저장소의 파일들을 원격 저장소로 전송함. 또한 브랜치 정보와 커밋 까지 모두 전송함.
--	원격 저장소 연결만으로 업스트림이 자동으로 설정되지는 않음
--	--set-upstream을 이용해 직접 설정해주어야 함
+<h1>6-10. 브랜치 전송</h1>
+<h3>6-10.1 브랜치 푸시</h3>
+-	깃의 푸시 작업은 로컬 저장소의 파일들을 원격 저장소로 전송함. 또한 브랜치 정보와 커밋 까지 모두 전송함.<br>
+-	원격 저장소 연결만으로 업스트림이 자동으로 설정되지는 않음<br>
+-	--set-upstream을 이용해 직접 설정해주어야 함<br>
 
-6-10.2 브랜치 페치
--	리모트 브랜치가 페치되면 깃은 단수히 원격저장소별칭/브랜치 포인터만 생성하고 자동으로 병합하지는 않음.
--	병합은 merge로 별도로 해야함.
--	병합하지 않고 테스트만 하고 싶으면 원격 브랜치의 포인터를 사용하여 임시 브랜치 생성 및 직접 체크아웃을 하면 됨
+<h3>6-10.2 브랜치 페치</h3>
+-	리모트 브랜치가 페치되면 깃은 단수히 원격저장소별칭/브랜치 포인터만 생성하고 자동으로 병합하지는 않음.<br>
+-	병합은 merge로 별도로 해야함.<br>
+-	병합하지 않고 테스트만 하고 싶으면 원격 브랜치의 포인터를 사용하여 임시 브랜치 생성 및 직접 체크아웃을 하면 됨<br>
 
-6-11. 브랜치 삭제
--	브랜치를 삭제하는 것은 간단함. 하지만 브랜치 내용 및 커밋을 모두 삭제하기에 주의해야 함.
--	현재 자신이 있는 브랜치는 삭제할 수 없음
+<h1>6-11. 브랜치 삭제</h1>
+-	브랜치를 삭제하는 것은 간단함. 하지만 브랜치 내용 및 커밋을 모두 삭제하기에 주의해야 함.<br>
+-	현재 자신이 있는 브랜치는 삭제할 수 없음<br>
 <img src = https://user-images.githubusercontent.com/101856066/194851894-826cc955-30f3-44ed-aab6-fbb7f68d6223.png>
 
-6-11.1 일반적인 삭제 방법
--	-d 옵션을 사용함.
--	Git branch -d [브랜치이름]
--	스테이지 상태가 깨끗할 때만 삭제 허용
+<h3>6-11.1 일반적인 삭제 방법</h3>
+-	-d 옵션을 사용함.<br>
+-	Git branch -d [브랜치이름]<br>
+-	스테이지 상태가 깨끗할 때만 삭제 허용<br>
 <img src = https://user-images.githubusercontent.com/101856066/194851896-c0c61b17-2f03-48df-9d60-ce0cef5d8dd8.png>
 
-6-11.2 강제 삭제 방법
--	-D 옵션을 사용해야 함.
--	Git branch -D [브랜치이름]
+<h3>6-11.2 강제 삭제 방법</h3>
+-	-D 옵션을 사용해야 함.<br>
+-	Git branch -D [브랜치이름]<br>
 <img src = https://user-images.githubusercontent.com/101856066/194851898-13cd1077-90a3-4de0-9213-5cf35e66d70e.png>
 
-6-11.3 소스트리에서 삭제
--	브랜치 선택 후 우클릭, featuer 삭제를 선택
+<h3>6-11.3 소스트리에서 삭제</h3>
+-	브랜치 선택 후 우클릭, featuer 삭제를 선택<br>
 
-6-11.4 리모트 브랜치 삭제
--	삭제 명령을 푸시해야 하며 git push origin --delete [리모트브랜치이름] 과 같이 사용해야 함.
+<h3>6-11.4 리모트 브랜치 삭제</h3>
+-	삭제 명령을 푸시해야 하며 git push origin --delete [리모트브랜치이름] 과 같이 사용해야 함.<br>
 <img src = https://user-images.githubusercontent.com/101856066/194851899-01caa529-d22a-4c83-b260-d2f03cefa60a.png>
 <img src = https://user-images.githubusercontent.com/101856066/194851902-d457e2ed-0827-4bcc-ab7c-e53f201c17e4.png>
 <img src = https://user-images.githubusercontent.com/101856066/194851904-8b64a282-4bbe-408b-9e97-6dd2eeb08fe1.png>
