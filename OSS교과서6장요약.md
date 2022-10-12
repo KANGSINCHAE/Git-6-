@@ -142,7 +142,7 @@
 -	캐럿(^)과 물결(~) 기호를 같이 사용함.<br>
 -	이전 n개의 위치를 지정하려면 ^나 ~를 여러 개 사용하는 것 보다는 HEAD^n 또는 HEAD~n 과 같이 숫자를 붙이는 것이 좋음<br>
 
-6-7.5 AHEAD, BHEAD
+<h3>6-7.5 AHEAD, BHEAD</h3>
 -	원격 저장소와 연동하여 깃을 관리하면 브랜치마다 HEAD가 2개가 있음.<br>
 -	AHEAD와 BHEAD는 서로 다른 저장소 간 HEAD 포인터의 위치 차이를 의미함.<br>
 -	AHEAD : 서버로 전송되지 않은 로컬 커밋이 있는 것을 의미함.<br>
@@ -213,7 +213,7 @@
 <img src = https://user-images.githubusercontent.com/101856066/194851874-34887d85-c47e-4783-979f-6bd1970d6be3.png>
 <img src = https://user-images.githubusercontent.com/101856066/194851878-ba813ee6-342b-4745-b6c6-f44ab5fa66d4.png>
 
-<h3>9.7 원격 브랜치 복사</h3>
+<h3>6-9.7 원격 브랜치 복사</h3>
 -	원격 저장소의 리모트 브랜치를 이용해서 로컬 저장소에서도 새로운 브랜치를 생성하여 동기화 가능<br>
 -	Git checkout -b 새이름 origin/브랜치이름 과 같이 사용함.<br>
 <img src = https://user-images.githubusercontent.com/101856066/194851879-ce00d7b7-4dfc-477a-aad6-320014b4e3a6.png>
